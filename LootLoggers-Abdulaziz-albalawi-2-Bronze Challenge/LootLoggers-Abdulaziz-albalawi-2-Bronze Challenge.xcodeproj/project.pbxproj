@@ -18,7 +18,7 @@
 		8E12B6932744D695004DB25C /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12B6922744D695004DB25C /* ItemsViewController.swift */; };
 		8E12B6952744D6C1004DB25C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12B6942744D6C1004DB25C /* Item.swift */; };
 		8E12B6992744D6FD004DB25C /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12B6982744D6FD004DB25C /* ItemStore.swift */; };
-		8EB5CD33274B75110065A62B /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5CD32274B75110065A62B /* ItemCell.swift */; };
+		8E36616E274E240C00862FDE /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E36616D274E240C00862FDE /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8E12B65D2744D641004DB25C /* LootLoggers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LootLoggers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E12B65D2744D641004DB25C /* LootLoggers-Abdulaziz-albalawi-2-Bronze Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LootLoggers-Abdulaziz-albalawi-2-Bronze Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E12B6602744D641004DB25C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E12B6622744D641004DB25C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8E12B6642744D641004DB25C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,16 +47,16 @@
 		8E12B6692744D642004DB25C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E12B66C2744D642004DB25C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E12B66E2744D642004DB25C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E12B6732744D642004DB25C /* LootLoggersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LootLoggersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E12B6732744D642004DB25C /* LootLoggers-Abdulaziz-albalawi-2-Bronze ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LootLoggers-Abdulaziz-albalawi-2-Bronze ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E12B6772744D642004DB25C /* LootLoggersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LootLoggersTests.swift; sourceTree = "<group>"; };
 		8E12B6792744D642004DB25C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E12B67E2744D642004DB25C /* LootLoggersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LootLoggersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E12B67E2744D642004DB25C /* LootLoggers-Abdulaziz-albalawi-2-Bronze ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LootLoggers-Abdulaziz-albalawi-2-Bronze ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E12B6822744D642004DB25C /* LootLoggersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LootLoggersUITests.swift; sourceTree = "<group>"; };
 		8E12B6842744D642004DB25C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E12B6922744D695004DB25C /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		8E12B6942744D6C1004DB25C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		8E12B6982744D6FD004DB25C /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
-		8EB5CD32274B75110065A62B /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ItemCell.swift; path = LootLoggers/Model/ItemCell.swift; sourceTree = SOURCE_ROOT; };
+		8E36616D274E240C00862FDE /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 		8E12B6542744D641004DB25C = {
 			isa = PBXGroup;
 			children = (
-				8E12B65F2744D641004DB25C /* LootLoggers */,
+				8E12B65F2744D641004DB25C /* LootLoggers-Abdulaziz-albalawi-2-Bronze Challenge */,
 				8E12B6762744D642004DB25C /* LootLoggersTests */,
 				8E12B6812744D642004DB25C /* LootLoggersUITests */,
 				8E12B65E2744D641004DB25C /* Products */,
@@ -97,14 +97,14 @@
 		8E12B65E2744D641004DB25C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8E12B65D2744D641004DB25C /* LootLoggers.app */,
-				8E12B6732744D642004DB25C /* LootLoggersTests.xctest */,
-				8E12B67E2744D642004DB25C /* LootLoggersUITests.xctest */,
+				8E12B65D2744D641004DB25C /* LootLoggers-Abdulaziz-albalawi-2-Bronze Challenge.app */,
+				8E12B6732744D642004DB25C /* LootLoggers-Abdulaziz-albalawi-2-Bronze ChallengeTests.xctest */,
+				8E12B67E2744D642004DB25C /* LootLoggers-Abdulaziz-albalawi-2-Bronze ChallengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8E12B65F2744D641004DB25C /* LootLoggers */ = {
+		8E12B65F2744D641004DB25C /* LootLoggers-Abdulaziz-albalawi-2-Bronze Challenge */ = {
 			isa = PBXGroup;
 			children = (
 				8E12B6622744D641004DB25C /* SceneDelegate.swift */,
@@ -116,7 +116,7 @@
 				8E12B66B2744D642004DB25C /* LaunchScreen.storyboard */,
 				8E12B66E2744D642004DB25C /* Info.plist */,
 			);
-			path = LootLoggers;
+			path = "LootLoggers-Abdulaziz-albalawi-2-Bronze Challenge";
 			sourceTree = "<group>";
 		};
 		8E12B6762744D642004DB25C /* LootLoggersTests */ = {
@@ -142,7 +142,7 @@
 			children = (
 				8E12B6942744D6C1004DB25C /* Item.swift */,
 				8E12B6982744D6FD004DB25C /* ItemStore.swift */,
-				8EB5CD32274B75110065A62B /* ItemCell.swift */,
+				8E36616D274E240C00862FDE /* ItemCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -167,9 +167,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8E12B65C2744D641004DB25C /* LootLoggers */ = {
+		8E12B65C2744D641004DB25C /* LootLoggers-Abdulaziz-albalawi-2-Bronze Challenge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8E12B6872744D642004DB25C /* Build configuration list for PBXNativeTarget "LootLoggers" */;
+			buildConfigurationList = 8E12B6872744D642004DB25C /* Build configuration list for PBXNativeTarget "LootLoggers-Abdulaziz-albalawi-2-Bronze Challenge" */;
 			buildPhases = (
 				8E12B6592744D641004DB25C /* Sources */,
 				8E12B65A2744D641004DB25C /* Frameworks */,
@@ -179,14 +179,14 @@
 			);
 			dependencies = (
 			);
-			name = LootLoggers;
+			name = "LootLoggers-Abdulaziz-albalawi-2-Bronze Challenge";
 			productName = LootLoggers;
-			productReference = 8E12B65D2744D641004DB25C /* LootLoggers.app */;
+			productReference = 8E12B65D2744D641004DB25C /* LootLoggers-Abdulaziz-albalawi-2-Bronze Challenge.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8E12B6722744D642004DB25C /* LootLoggersTests */ = {
+		8E12B6722744D642004DB25C /* LootLoggers-Abdulaziz-albalawi-2-Bronze ChallengeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8E12B68A2744D642004DB25C /* Build configuration list for PBXNativeTarget "LootLoggersTests" */;
+			buildConfigurationList = 8E12B68A2744D642004DB25C /* Build configuration list for PBXNativeTarget "LootLoggers-Abdulaziz-albalawi-2-Bronze ChallengeTests" */;
 			buildPhases = (
 				8E12B66F2744D642004DB25C /* Sources */,
 				8E12B6702744D642004DB25C /* Frameworks */,
@@ -197,14 +197,14 @@
 			dependencies = (
 				8E12B6752744D642004DB25C /* PBXTargetDependency */,
 			);
-			name = LootLoggersTests;
+			name = "LootLoggers-Abdulaziz-albalawi-2-Bronze ChallengeTests";
 			productName = LootLoggersTests;
-			productReference = 8E12B6732744D642004DB25C /* LootLoggersTests.xctest */;
+			productReference = 8E12B6732744D642004DB25C /* LootLoggers-Abdulaziz-albalawi-2-Bronze ChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8E12B67D2744D642004DB25C /* LootLoggersUITests */ = {
+		8E12B67D2744D642004DB25C /* LootLoggers-Abdulaziz-albalawi-2-Bronze ChallengeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8E12B68D2744D642004DB25C /* Build configuration list for PBXNativeTarget "LootLoggersUITests" */;
+			buildConfigurationList = 8E12B68D2744D642004DB25C /* Build configuration list for PBXNativeTarget "LootLoggers-Abdulaziz-albalawi-2-Bronze ChallengeUITests" */;
 			buildPhases = (
 				8E12B67A2744D642004DB25C /* Sources */,
 				8E12B67B2744D642004DB25C /* Frameworks */,
@@ -215,9 +215,9 @@
 			dependencies = (
 				8E12B6802744D642004DB25C /* PBXTargetDependency */,
 			);
-			name = LootLoggersUITests;
+			name = "LootLoggers-Abdulaziz-albalawi-2-Bronze ChallengeUITests";
 			productName = LootLoggersUITests;
-			productReference = 8E12B67E2744D642004DB25C /* LootLoggersUITests.xctest */;
+			productReference = 8E12B67E2744D642004DB25C /* LootLoggers-Abdulaziz-albalawi-2-Bronze ChallengeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -242,7 +242,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8E12B6582744D641004DB25C /* Build configuration list for PBXProject "LootLoggers" */;
+			buildConfigurationList = 8E12B6582744D641004DB25C /* Build configuration list for PBXProject "LootLoggers-Abdulaziz-albalawi-2-Bronze Challenge" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -255,9 +255,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8E12B65C2744D641004DB25C /* LootLoggers */,
-				8E12B6722744D642004DB25C /* LootLoggersTests */,
-				8E12B67D2744D642004DB25C /* LootLoggersUITests */,
+				8E12B65C2744D641004DB25C /* LootLoggers-Abdulaziz-albalawi-2-Bronze Challenge */,
+				8E12B6722744D642004DB25C /* LootLoggers-Abdulaziz-albalawi-2-Bronze ChallengeTests */,
+				8E12B67D2744D642004DB25C /* LootLoggers-Abdulaziz-albalawi-2-Bronze ChallengeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -298,7 +298,7 @@
 				8E12B6652744D641004DB25C /* ViewController.swift in Sources */,
 				8E12B6992744D6FD004DB25C /* ItemStore.swift in Sources */,
 				8E12B6932744D695004DB25C /* ItemsViewController.swift in Sources */,
-				8EB5CD33274B75110065A62B /* ItemCell.swift in Sources */,
+				8E36616E274E240C00862FDE /* ItemCell.swift in Sources */,
 				8E12B6612744D641004DB25C /* AppDelegate.swift in Sources */,
 				8E12B6632744D641004DB25C /* SceneDelegate.swift in Sources */,
 			);
@@ -325,12 +325,12 @@
 /* Begin PBXTargetDependency section */
 		8E12B6752744D642004DB25C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8E12B65C2744D641004DB25C /* LootLoggers */;
+			target = 8E12B65C2744D641004DB25C /* LootLoggers-Abdulaziz-albalawi-2-Bronze Challenge */;
 			targetProxy = 8E12B6742744D642004DB25C /* PBXContainerItemProxy */;
 		};
 		8E12B6802744D642004DB25C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8E12B65C2744D641004DB25C /* LootLoggers */;
+			target = 8E12B65C2744D641004DB25C /* LootLoggers-Abdulaziz-albalawi-2-Bronze Challenge */;
 			targetProxy = 8E12B67F2744D642004DB25C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -478,7 +478,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T8TF9DA8WJ;
-				INFOPLIST_FILE = LootLoggers/Info.plist;
+				INFOPLIST_FILE = "LootLoggers-Abdulaziz-albalawi-2-Bronze Challenge/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -497,7 +497,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T8TF9DA8WJ;
-				INFOPLIST_FILE = LootLoggers/Info.plist;
+				INFOPLIST_FILE = "LootLoggers-Abdulaziz-albalawi-2-Bronze Challenge/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -527,7 +527,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LootLoggers.app/LootLoggers";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LootLoggers-Abdulaziz-albalawi-2-Bronze Challenge.app/LootLoggers-Abdulaziz-albalawi-2-Bronze Challenge";
 			};
 			name = Debug;
 		};
@@ -549,7 +549,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LootLoggers.app/LootLoggers";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LootLoggers-Abdulaziz-albalawi-2-Bronze Challenge.app/LootLoggers-Abdulaziz-albalawi-2-Bronze Challenge";
 			};
 			name = Release;
 		};
@@ -596,7 +596,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8E12B6582744D641004DB25C /* Build configuration list for PBXProject "LootLoggers" */ = {
+		8E12B6582744D641004DB25C /* Build configuration list for PBXProject "LootLoggers-Abdulaziz-albalawi-2-Bronze Challenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8E12B6852744D642004DB25C /* Debug */,
@@ -605,7 +605,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8E12B6872744D642004DB25C /* Build configuration list for PBXNativeTarget "LootLoggers" */ = {
+		8E12B6872744D642004DB25C /* Build configuration list for PBXNativeTarget "LootLoggers-Abdulaziz-albalawi-2-Bronze Challenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8E12B6882744D642004DB25C /* Debug */,
@@ -614,7 +614,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8E12B68A2744D642004DB25C /* Build configuration list for PBXNativeTarget "LootLoggersTests" */ = {
+		8E12B68A2744D642004DB25C /* Build configuration list for PBXNativeTarget "LootLoggers-Abdulaziz-albalawi-2-Bronze ChallengeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8E12B68B2744D642004DB25C /* Debug */,
@@ -623,7 +623,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8E12B68D2744D642004DB25C /* Build configuration list for PBXNativeTarget "LootLoggersUITests" */ = {
+		8E12B68D2744D642004DB25C /* Build configuration list for PBXNativeTarget "LootLoggers-Abdulaziz-albalawi-2-Bronze ChallengeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8E12B68E2744D642004DB25C /* Debug */,

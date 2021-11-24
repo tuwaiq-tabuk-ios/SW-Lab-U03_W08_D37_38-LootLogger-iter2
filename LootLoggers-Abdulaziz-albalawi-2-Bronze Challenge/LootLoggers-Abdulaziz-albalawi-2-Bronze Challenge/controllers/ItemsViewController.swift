@@ -57,13 +57,13 @@ class ItemsViewController: UITableViewController {
     
     let item = itemStore.allItems[indexPath.row]
     
-    //cell.valueLabel.textColor = item.valueInDollars > 50 ? .green : .red
-    
-    if item.valueInDollars > 50 {
-      cell.valueLabel.textColor = .green
-    } else {
-      cell.valueLabel.textColor = .red
-    }
+    cell.valueLabel.textColor = item.valueInDollars > 50 ? .green : .red
+//
+//    if item.valueInDollars > 50 {
+//      cell.valueLabel.textColor = .green
+//    } else {
+//      cell.valueLabel.textColor = .red
+//    }
     // cell.textLabel?.text = item.name
     // cell.detailTextLabel?.text = "$\(item.valueInDollars)"
     cell.nameLabel.text = item.name
