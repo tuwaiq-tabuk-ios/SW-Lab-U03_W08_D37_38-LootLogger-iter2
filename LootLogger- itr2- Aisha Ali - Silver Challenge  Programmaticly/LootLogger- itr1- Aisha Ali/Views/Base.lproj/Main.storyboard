@@ -58,36 +58,41 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbY-pO-6rT" userLabel="Name_Label">
-                                            <rect key="frame" x="18" y="11" width="28.5" height="28"/>
+                                            <rect key="frame" x="18" y="9" width="35.5" height="23.5"/>
                                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <color key="textColor" red="0.23921570180000001" green="0.4941176176" blue="0.54509806630000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJQ-9X-CJI" userLabel="SerialNumber_Label">
-                                            <rect key="frame" x="18" y="49" width="28.5" height="0.0"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJQ-9X-CJI" userLabel="SerialNumber_Label">
+                                            <rect key="frame" x="18" y="34" width="35.5" height="17"/>
                                             <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="17" id="0dw-fU-Z7c"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZg-LM-0tu" userLabel="Value_Label">
-                                            <rect key="frame" x="358.5" y="21.5" width="35.5" height="17"/>
+                                            <rect key="frame" x="358.5" y="9" width="35.5" height="42"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <color key="textColor" red="0.40000000000000002" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="vJQ-9X-CJI" secondAttribute="bottom" id="9MW-Nr-MNP"/>
-                                        <constraint firstItem="DZg-LM-0tu" firstAttribute="centerY" secondItem="ACb-X4-tAj" secondAttribute="centerY" id="ABZ-f4-BdC"/>
-                                        <constraint firstItem="xbY-pO-6rT" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="DZg-LM-0tu" secondAttribute="leading" constant="10" id="CZu-K0-44z"/>
+                                        <constraint firstItem="vJQ-9X-CJI" firstAttribute="top" secondItem="xbY-pO-6rT" secondAttribute="bottom" constant="1.5" id="0y5-K8-VQc"/>
+                                        <constraint firstAttribute="bottom" secondItem="vJQ-9X-CJI" secondAttribute="bottom" constant="9" id="9MW-Nr-MNP"/>
+                                        <constraint firstItem="vJQ-9X-CJI" firstAttribute="top" secondItem="xbY-pO-6rT" secondAttribute="bottom" constant="1.5" id="AW1-FK-x9h"/>
                                         <constraint firstItem="xbY-pO-6rT" firstAttribute="leading" secondItem="vJQ-9X-CJI" secondAttribute="leading" id="DJ4-3G-KeF"/>
-                                        <constraint firstItem="xbY-pO-6rT" firstAttribute="top" secondItem="ACb-X4-tAj" secondAttribute="topMargin" id="NsL-5k-OgJ"/>
+                                        <constraint firstItem="DZg-LM-0tu" firstAttribute="bottom" secondItem="vJQ-9X-CJI" secondAttribute="bottom" id="EAz-7h-Iuy"/>
+                                        <constraint firstItem="xbY-pO-6rT" firstAttribute="top" secondItem="ACb-X4-tAj" secondAttribute="top" constant="9" id="NsL-5k-OgJ"/>
                                         <constraint firstItem="xbY-pO-6rT" firstAttribute="trailing" secondItem="vJQ-9X-CJI" secondAttribute="trailing" id="PUa-by-Dg4"/>
                                         <constraint firstItem="xbY-pO-6rT" firstAttribute="leading" secondItem="ACb-X4-tAj" secondAttribute="leading" constant="18" id="XFz-RB-izN"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="DZg-LM-0tu" secondAttribute="trailing" id="aPL-jB-MMH"/>
-                                        <constraint firstItem="vJQ-9X-CJI" firstAttribute="top" secondItem="xbY-pO-6rT" secondAttribute="bottom" constant="10" id="t6p-Ov-BPg"/>
+                                        <constraint firstItem="xbY-pO-6rT" firstAttribute="top" secondItem="DZg-LM-0tu" secondAttribute="top" id="gCB-Wm-SzN"/>
+                                        <constraint firstItem="xbY-pO-6rT" firstAttribute="top" secondItem="ACb-X4-tAj" secondAttribute="topMargin" constant="-2" id="j2z-MN-66r"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

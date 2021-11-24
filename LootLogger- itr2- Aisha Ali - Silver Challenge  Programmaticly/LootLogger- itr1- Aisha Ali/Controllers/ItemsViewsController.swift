@@ -13,13 +13,37 @@ class ItemsViewController: UITableViewController {
   
   var itemStore: ItemStore!
   
+  let moreThan50Section = 0
+  let otherSection = 1
+  
+  var morethan50Empty: Bool {
+    get { return itemStore.allItems.filter{getSectionOf(item: $0) == moreThan50Section}.count == 0 }
+  }
+  
+  var otherSectionsEmpty: Bool {
+    get { return itemStore.allItems.filter{getSectionOf(item: $0) == otherSection}.count == 0 }
+  }
   
   //MARK: - add New Item
   @IBAction func addNewItem(_ sender: UIButton) {
+    
+    let moreThan50 = morethan50Empty
+    
+    let otherSections = otherSectionsEmpty
+    
     let newItem = itemStore.createItem()
     
-    if let index = itemStore.allItems.firstIndex(of: newItem) {
-      let indexPath = IndexPath(row: index, section: 0)
+    let section = getSectionOf(item: newItem)
+    
+    if (section == moreThan50Section && moreThan50) ||
+        (section == otherSection && otherSections) {
+      tableView.reloadData()
+      return
+    }
+    
+    if let index = itemStore.allItems.filter({ getSectionOf(item: $0) == section }).firstIndex(of: newItem) {
+      
+      let indexPath = IndexPath(row: index, section: section)
       tableView.insertRows(at: [indexPath], with: .automatic)
     }
   }
@@ -47,28 +71,52 @@ class ItemsViewController: UITableViewController {
     tableView.estimatedRowHeight = 65
   }
   
-//  override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//
-//  }
+  override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    switch section {
+    case 0:
+      return "Over $50"
+    case 1:
+      return "Under $50"
+    default:
+      return nil
+    }
+  }
   
   // MARK: - Table view data source
   
   override func numberOfSections(in tableView: UITableView) -> Int {
     
-    return 1
+    return 2
   }
   
   
-
+  func getSectionOf(item :Item) -> Int {
+    
+    return item.valueInDollars > 50 ? moreThan50Section : otherSection
+  }
+  
   
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     
-    return itemStore.allItems.count
-
+    if (section == moreThan50Section && morethan50Empty) ||
+        (section == otherSection && otherSectionsEmpty) {
+      return 1
+    } else {
+      
+      let moreThan50SectionCount = itemStore.allItems.filter { getSectionOf(item: $0) == moreThan50Section } .count
+      
+      if section == moreThan50Section {
+        
+        return moreThan50SectionCount
+      } else {
+        
+        return itemStore.allItems.count - moreThan50SectionCount
+      }
+    }
   }
   
-  //MARK: - Adding sorted items
+  //MARK: - Adding sorted items and Trailling for nameLabel
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
@@ -76,22 +124,27 @@ class ItemsViewController: UITableViewController {
     let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell",
                                              for: indexPath) as! ItemCell
     
-    let item = itemStore.allItems[indexPath.row]
-
+    
+    
+    cell.nameLabel.trailingAnchor.constraint(lessThanOrEqualTo:cell.valueLabel.leadingAnchor).isActive = true
+    
+    
+    let item = itemStore.allItems.filter{ getSectionOf(item: $0) == indexPath.section } [indexPath.row]
+    
     
     cell.nameLabel.text = item.name
     cell.serialNumberLabel.text = item.serialNumber
     
-    overlapping(cell.nameLabel)
-    overlapping(cell.serialNumberLabel)
     
     if item.valueInDollars >= 50 {
       
       cell.valueLabel.textColor = .red
+      cell.nameLabel.trailingAnchor.constraint(lessThanOrEqualTo:cell.valueLabel.leadingAnchor, constant: 10).isActive = true
       
     } else {
       
       cell.valueLabel.textColor = .green
+      cell.nameLabel.trailingAnchor.constraint(lessThanOrEqualTo:cell.valueLabel.leadingAnchor, constant: 10).isActive = true
     }
     
     cell.valueLabel.text = "$\(item.valueInDollars)"
@@ -117,8 +170,6 @@ class ItemsViewController: UITableViewController {
     itemStore.moveItem(from: sourceIndexPath.row, to: destinationIndexPath.row)
   }
 }
-
-
 
 
 

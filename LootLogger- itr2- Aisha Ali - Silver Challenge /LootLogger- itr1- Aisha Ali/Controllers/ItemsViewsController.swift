@@ -128,11 +128,8 @@ class ItemsViewController: UITableViewController {
 
     
     cell.nameLabel.text = item.name
-    
     cell.serialNumberLabel.text = item.serialNumber
     
-    overlapping(cell.nameLabel)
-    overlapping(cell.serialNumberLabel)
     
     if item.valueInDollars >= 50 {
       

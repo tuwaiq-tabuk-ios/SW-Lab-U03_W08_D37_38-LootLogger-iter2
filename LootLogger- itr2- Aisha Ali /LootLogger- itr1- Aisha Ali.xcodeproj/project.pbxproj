@@ -15,6 +15,8 @@
 		CA352CE52741421B000E40D7 /* ItemsViewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA352CE42741421B000E40D7 /* ItemsViewsController.swift */; };
 		CA352CE7274143A7000E40D7 /* ItemClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA352CE6274143A7000E40D7 /* ItemClass.swift */; };
 		CA352CEC2742355D000E40D7 /* ItemsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA352CEB2742355D000E40D7 /* ItemsStore.swift */; };
+		CA67BD19274E10D300243E05 /* Extensions in Resources */ = {isa = PBXBuildFile; fileRef = CA67BD18274E10D300243E05 /* Extensions */; };
+		CA67BD1B274E112100243E05 /* ItemView+Exst.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA67BD1A274E112100243E05 /* ItemView+Exst.swift */; };
 		CA94066F274B7274000788D8 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA94066E274B7274000788D8 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		CA352CE42741421B000E40D7 /* ItemsViewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewsController.swift; sourceTree = "<group>"; };
 		CA352CE6274143A7000E40D7 /* ItemClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemClass.swift; sourceTree = "<group>"; };
 		CA352CEB2742355D000E40D7 /* ItemsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsStore.swift; sourceTree = "<group>"; };
+		CA67BD18274E10D300243E05 /* Extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Extensions; sourceTree = "<group>"; };
+		CA67BD1A274E112100243E05 /* ItemView+Exst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemView+Exst.swift"; sourceTree = "<group>"; };
 		CA94066E274B7274000788D8 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +66,7 @@
 		CA352CCE274141F9000E40D7 /* LootLogger- itr1- Aisha Ali */ = {
 			isa = PBXGroup;
 			children = (
+				CA67BD18274E10D300243E05 /* Extensions */,
 				CA352CE327414205000E40D7 /* Controllers */,
 				CA352CE927423488000E40D7 /* Classes */,
 				CA352CEA27423499000E40D7 /* Views */,
@@ -74,6 +79,7 @@
 		CA352CE327414205000E40D7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CA67BD1A274E112100243E05 /* ItemView+Exst.swift */,
 				CA352CE42741421B000E40D7 /* ItemsViewsController.swift */,
 			);
 			path = Controllers;
@@ -167,6 +173,7 @@
 			files = (
 				CA352CDC274141FA000E40D7 /* LaunchScreen.storyboard in Resources */,
 				CA352CD9274141FA000E40D7 /* Assets.xcassets in Resources */,
+				CA67BD19274E10D300243E05 /* Extensions in Resources */,
 				CA352CD7274141F9000E40D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,6 +187,7 @@
 			files = (
 				CA352CE52741421B000E40D7 /* ItemsViewsController.swift in Sources */,
 				CA352CE7274143A7000E40D7 /* ItemClass.swift in Sources */,
+				CA67BD1B274E112100243E05 /* ItemView+Exst.swift in Sources */,
 				CA94066F274B7274000788D8 /* ItemCell.swift in Sources */,
 				CA352CD0274141F9000E40D7 /* AppDelegate.swift in Sources */,
 				CA352CD2274141F9000E40D7 /* SceneDelegate.swift in Sources */,
