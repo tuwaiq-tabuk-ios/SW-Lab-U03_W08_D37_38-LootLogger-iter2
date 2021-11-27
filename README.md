@@ -33,5 +33,17 @@ Second iteration of LootLogger App where we present a list of Item instances in 
 
 
 
+
+https://user-images.githubusercontent.com/91871792/143296040-3f722779-2a53-406e-8164-31abe21dbb15.mp4
+
+
+https://user-images.githubusercontent.com/91871792/143296155-e395ffb7-9124-4d1b-93a5-6e945c1a1472.mp4
+
+
+https://user-images.githubusercontent.com/91871792/143296197-7d6f0b47-2b6a-4cd0-982a-9aecf879f101.mp4
+
+
+
+
 ## Deadline 
 Thursday 25th November 9:15 am

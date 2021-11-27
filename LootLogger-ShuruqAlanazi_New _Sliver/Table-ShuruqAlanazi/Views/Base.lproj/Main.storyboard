@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NbC-2Z-sTY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Items View Controller-->
+        <scene sceneID="BZy-v0-AXP">
+            <objects>
+                <tableViewController id="NbC-2Z-sTY" customClass="ItemsViewController" customModule="Table_ShuruqAlanazi" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="blg-IX-Ssk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" red="0.74997526407241821" green="0.90849846601486206" blue="0.93854272365570068" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexTrackingBackgroundColor" red="0.74997526407241821" green="0.90849846601486206" blue="0.93854272365570068" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="bZ2-ID-dqq">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="40 Mint Green Wallpaper Backgrounds For Iphone" translatesAutoresizingMaskIntoConstraints="NO" id="ruo-7o-LWI">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bA-X5-rCI">
+                                    <rect key="frame" x="310" y="12" width="50" height="31"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Add"/>
+                                    <connections>
+                                        <action selector="addNewItem:" destination="NbC-2Z-sTY" eventType="touchUpInside" id="sb5-sz-eCC"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lwh-Oa-DlB">
+                                    <rect key="frame" x="57" y="12" width="49" height="31"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Edit"/>
+                                    <connections>
+                                        <action selector="toggleEditingMode:" destination="NbC-2Z-sTY" eventType="touchUpInside" id="MXC-WD-LHR"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="2bA-X5-rCI" firstAttribute="centerY" secondItem="bZ2-ID-dqq" secondAttribute="centerY" id="KDG-Xo-3BN"/>
+                                <constraint firstItem="2bA-X5-rCI" firstAttribute="trailing" secondItem="bZ2-ID-dqq" secondAttribute="trailingMargin" constant="-46" id="Xew-8I-apO"/>
+                                <constraint firstItem="Lwh-Oa-DlB" firstAttribute="leading" secondItem="bZ2-ID-dqq" secondAttribute="leadingMargin" constant="49" id="dIZ-OB-imn"/>
+                                <constraint firstItem="2bA-X5-rCI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Lwh-Oa-DlB" secondAttribute="trailing" constant="8" symbolic="YES" id="qSs-0k-KtE"/>
+                                <constraint firstItem="2bA-X5-rCI" firstAttribute="baseline" secondItem="Lwh-Oa-DlB" secondAttribute="baseline" id="vIa-pk-o8L"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="80" id="MUb-xY-24E" customClass="ItemCell" customModule="Table_ShuruqAlanazi" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="99.5" width="414" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MUb-xY-24E" id="RB2-iD-sq6">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="40 Mint Green Wallpaper Backgrounds For Iphone" translatesAutoresizingMaskIntoConstraints="NO" id="61x-af-gix">
+                                            <rect key="frame" x="0.0" y="-14.5" width="414" height="128"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3d-2o-e1R">
+                                            <rect key="frame" x="20" y="11" width="88" height="26"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSx-L5-197">
+                                            <rect key="frame" x="20" y="45" width="88" height="27"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" systemColor="secondaryLabelColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyE-dC-Dnn">
+                                            <rect key="frame" x="358.5" y="11" width="47.5" height="58"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="fSx-L5-197" firstAttribute="leading" secondItem="A3d-2o-e1R" secondAttribute="leading" id="3LN-Ey-hz2"/>
+                                        <constraint firstAttribute="bottom" secondItem="fSx-L5-197" secondAttribute="bottom" constant="8" id="6db-hg-CJU"/>
+                                        <constraint firstItem="A3d-2o-e1R" firstAttribute="top" secondItem="RB2-iD-sq6" secondAttribute="topMargin" id="8qk-Wx-as8"/>
+                                        <constraint firstItem="A3d-2o-e1R" firstAttribute="trailing" secondItem="gyE-dC-Dnn" secondAttribute="trailing" id="96m-lw-hKp"/>
+                                        <constraint firstItem="fSx-L5-197" firstAttribute="top" secondItem="A3d-2o-e1R" secondAttribute="bottom" constant="8" symbolic="YES" id="KZH-rS-fkq"/>
+                                        <constraint firstItem="gyE-dC-Dnn" firstAttribute="centerY" secondItem="RB2-iD-sq6" secondAttribute="centerY" id="Tm8-vB-EtB"/>
+                                        <constraint firstItem="A3d-2o-e1R" firstAttribute="top" secondItem="gyE-dC-Dnn" secondAttribute="top" id="Wxo-zo-VPF"/>
+                                        <constraint firstItem="A3d-2o-e1R" firstAttribute="leading" secondItem="RB2-iD-sq6" secondAttribute="leadingMargin" id="hA8-ch-adN"/>
+                                        <constraint firstAttribute="trailing" secondItem="gyE-dC-Dnn" secondAttribute="trailing" constant="20" symbolic="YES" id="uR6-KR-mI5"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="A3d-2o-e1R" id="wZI-bt-laA"/>
+                                    <outlet property="serialNumberLabel" destination="fSx-L5-197" id="BPv-Pp-tw2"/>
+                                    <outlet property="valueLabel" destination="gyE-dC-Dnn" id="KuP-X1-FLY"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NbC-2Z-sTY" id="NDz-vb-Hhi"/>
+                            <outlet property="delegate" destination="NbC-2Z-sTY" id="ePx-Xq-QHN"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VKw-tJ-q33" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="831.88405797101461" y="49.553571428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="40 Mint Green Wallpaper Backgrounds For Iphone" width="1024" height="474"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
