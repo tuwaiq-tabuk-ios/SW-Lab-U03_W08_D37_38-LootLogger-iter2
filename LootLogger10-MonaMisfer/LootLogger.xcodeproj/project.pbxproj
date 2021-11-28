@@ -8,19 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		394F84F227423C700085277B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394F84F127423C700085277B /* Item.swift */; };
-		397ADB0D274D20DF00491E4F /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397ADB0C274D20DF00491E4F /* ItemCell.swift */; };
 		398478DD2741460E00F37200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398478DC2741460E00F37200 /* AppDelegate.swift */; };
 		398478DF2741460E00F37200 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398478DE2741460E00F37200 /* SceneDelegate.swift */; };
 		398478E42741460E00F37200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 398478E22741460E00F37200 /* Main.storyboard */; };
 		398478E62741461000F37200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 398478E52741461000F37200 /* Assets.xcassets */; };
 		398478E92741461000F37200 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 398478E72741461000F37200 /* LaunchScreen.storyboard */; };
 		398478F4274147C200F37200 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398478F3274147C200F37200 /* ItemsViewController.swift */; };
+		39F3C37527535C2A00481178 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F3C37427535C2A00481178 /* ItemCell.swift */; };
 		39F5D05F2742808E0062F73B /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F5D05E2742808E0062F73B /* ItemStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		394F84F127423C700085277B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		397ADB0C274D20DF00491E4F /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ItemCell.swift; path = "../../SW-Lab-U03_W08_D33_36-LootLogger-iter1/LootLogger/ItemCell.swift"; sourceTree = "<group>"; };
 		398478D92741460E00F37200 /* LootLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LootLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		398478DC2741460E00F37200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		398478DE2741460E00F37200 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,6 +28,7 @@
 		398478E82741461000F37200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		398478EA2741461000F37200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		398478F3274147C200F37200 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		39F3C37427535C2A00481178 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		39F5D05E2742808E0062F73B /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,18 +62,34 @@
 		398478DB2741460E00F37200 /* LootLogger */ = {
 			isa = PBXGroup;
 			children = (
-				398478DC2741460E00F37200 /* AppDelegate.swift */,
+				39F3C37727535CCE00481178 /* Model */,
+				39F3C37627535C6200481178 /* Controller */,
 				398478DE2741460E00F37200 /* SceneDelegate.swift */,
 				398478E22741460E00F37200 /* Main.storyboard */,
 				398478E52741461000F37200 /* Assets.xcassets */,
 				398478E72741461000F37200 /* LaunchScreen.storyboard */,
 				398478EA2741461000F37200 /* Info.plist */,
-				398478F3274147C200F37200 /* ItemsViewController.swift */,
-				394F84F127423C700085277B /* Item.swift */,
-				397ADB0C274D20DF00491E4F /* ItemCell.swift */,
-				39F5D05E2742808E0062F73B /* ItemStore.swift */,
 			);
 			path = LootLogger;
+			sourceTree = "<group>";
+		};
+		39F3C37627535C6200481178 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				398478DC2741460E00F37200 /* AppDelegate.swift */,
+				398478F3274147C200F37200 /* ItemsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		39F3C37727535CCE00481178 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				39F3C37427535C2A00481178 /* ItemCell.swift */,
+				39F5D05E2742808E0062F73B /* ItemStore.swift */,
+				394F84F127423C700085277B /* Item.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +166,7 @@
 				398478F4274147C200F37200 /* ItemsViewController.swift in Sources */,
 				39F5D05F2742808E0062F73B /* ItemStore.swift in Sources */,
 				398478DD2741460E00F37200 /* AppDelegate.swift in Sources */,
-				397ADB0D274D20DF00491E4F /* ItemCell.swift in Sources */,
+				39F3C37527535C2A00481178 /* ItemCell.swift in Sources */,
 				394F84F227423C700085277B /* Item.swift in Sources */,
 				398478DF2741460E00F37200 /* SceneDelegate.swift in Sources */,
 			);
